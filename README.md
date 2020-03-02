@@ -4,7 +4,7 @@ Universidad de Huelva
 Curso 2019-2020
 
 ## natural.pl
-    este programa implementa el Prologel predicado natural que comprueba si un número es natural o no.
+    este programa implementa el Prolog. El predicado natural que comprueba si un número es natural o no.
 
     natural(4.5). 
     false
