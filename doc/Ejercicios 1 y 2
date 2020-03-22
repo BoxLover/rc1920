@@ -1,0 +1,33 @@
+%%%%%%%%%%%%%%%Ejercicio 1%%%%%%%%%%%%%%%%
+%Si se podría realizar. Para concatenar dos listas tenemos el siguiente código
+
+concatenar([],L2,L2).
+concatenar([Cabeza|Resto],L2,[Cabeza|R]):-
+  concatenar(Resto,L2,R).
+  
+%Para concatenar cualquier par de números consecutivos de una lista haremos lo siguiente
+
+
+%concatenar(_,[E1,E2|_],[1,2,3,4,5,6,7]).
+
+%%%%%%%%%%%%%%%Ejercicio 2%%%%%%%%%%%%%%%%
+%Para invertir una lista usaremos el siguiente código
+
+invertir([],[]).
+invertir([Cab|Resto],R2):-
+    invertir(Resto,R),
+    append(R,[Cab],R2).
+
+%Podemos usar el predicado invertir de forma reversible. De forma que le doy la salida y él me da la entrada:
+%invertir(L,[4,3,2,1]).
+%   L = [1, 2, 3, 4] 
+
+%%%%%%%%%%%%%%%Ejercicio 3%%%%%%%%%%%%%%%%
+%La utilización de palabras clave dentro del predicado, como por ejemplo:'is'. Esto es así porque un predicado que incluya esta palabras
+%Solo se puede leer en un sentido
+
+%%%%%%%%%%%%%%%Ejercicio 4%%%%%%%%%%%%%%%%
+
+%concatenar([1,2,3],R,[1,2,3,4,5,6]), invertir(L,R).
+%R = [4, 5, 6],
+%L = [6, 5, 4].
